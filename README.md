@@ -24,208 +24,152 @@ Publish the website in the LocalHost.
 
 # PROGRAM :
 ```
-
-
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dribbble Clone</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Dribble</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-light">
-  <div class="container">
-    <a class="navbar-brand text-primary" href="#"><strong>Dribbble Clone</strong></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link text-dark active" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#">Shots</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#">Designers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#">Sign Up</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-<section class="text-center text-white" style="background-image: linear-gradient(to bottom right, #5c67f5, #7091ff); padding: 100px 0;">
-  <div class="container">
-    <h1 style="font-weight: bold; font-size: 2.5rem;">Discover the World’s Top Designers & Creatives</h1>
-    <p style="font-size: 1.1rem;">Join the Dribbble community to showcase your work, inspire others, and find design inspiration.</p>
-    <a href="#" class="btn btn-primary btn-lg mt-3">Get Started</a>
-  </div>
-</section>
-
-
-<section class="featured-section">
-  <div class="container">
-    <h2 class="text-center text-primary mb-5">Featured UI/UX Shots</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card border-light shadow">
-          <img src="C:\Users\A.sathish\Downloads\flat-design-geometric-pattern-mobile-design-template_23-2149939686.avif" class="card-img-top" alt="Shot 1">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Creative App Interface</h5>
-            <p class="card-text text-secondary">A brief description of the app interface design.</p>
-          </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-danger" href="#">Dribbble</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Shots</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Designers</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Community</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Jobs</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-outline-light me-2" href="#">Sign in</a>
+            <a class="btn btn-outline-light me-2" href="#">Sign Up</a>
+            <input type="search" class="form-control w-auto" placeholder="Search" style="margin: 20px;">
         </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card border-light shadow">
-          <img src="C:\Users\A.sathish\Downloads\gradient-ui-ux-elements_23-2149057420.avif" class="card-img-top" alt="Shot 2">
-          <div class="card-body">
-            <h5 class="card-title text-info">Modern Dashboard UI</h5>
-            <p class="card-text text-secondary">A sleek, modern dashboard design for data visualization.</p>
-          </div>
+    </nav>
+
+    <section id="home" class="bg-white py-5"  style="height: 45vh;" >
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-middle">
+                    <h1 class="display-4 fw-bold">What are you working on?</h1>
+                    <p class="my-3">Dribbble is a show-and-tell platform for designers.</p>
+                    <button class="btn btn-secondary me-2">Learn More</button>
+                    <button class="btn btn-primary">Sign up</button>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="home.png" class="img-fluid" alt="Design Work" style="height: 45vh;">
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card border-light shadow">
-          <img src="C:\Users\A.sathish\Downloads\online-shopping-landing-page_33099-1725.avif" class="card-img-top" alt="Shot 3">
-          <div class="card-body">
-            <h5 class="card-title text-success">E-commerce Web Design</h5>
-            <p class="card-text text-secondary">An attractive e-commerce landing page for a smooth user experience.</p>
-          </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h2 class="fw-bold">Popular</h2>
+                </div>
+                <div class="col-md-4 text-center">
+                    <button class="btn btn-light btn-secondary btn-outline-dark">Now</button>
+                    <button class="btn btn-light btn-secondary btn-outline-dark">Shots</button>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shot-card">
+                        <img src="img4.jpeg" width="300" height="225">
+                      
+                        <div class="card-body text-center">
+                            <p class="card-text mb-0">🔗 Awe Design Studio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shot-card">
+                        <img src="img7.jpg" width="300" height="225">
+                        
+                        <div class="card-body text-center">
+                            <p class="card-text mb-0">🔗 Russlan silz</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shot-card">
+                        <img src="img6.jpeg" width="300" height="225">
+                        <div class="card-body text-center">
+                            <p class="card-text mb-0">🔗 Alfrey Davilla</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shot-card">
+                        <img src="https://cdn.dribbble.com/users/1739084/screenshots/4448965/kyzzlj.jpg?resize=400x300&vertical=center" class="card-img-top" alt="Shot 2">
+                       
+                        <div class="card-body text-center">
+                            <p class="card-text mb-0">🔗 MakeReign</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shot-card">
+                        <img src="https://cdn.dribbble.com/users/140043/screenshots/9106916/dribbble_4_compressed.png?resize=400x300&vertical=center" class="card-img-top" alt="Shot 2">
+                        <div class="card-body text-center">
+                            <p class="card-text mb-0">🔗 Mattias Johannson</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shot-card">
+                        <img src="img2.jpg" width="300" height="225">
+                        
+                        <div class="card-body text-center">
+                            <p class="card-text mb-0">🔗 Jan Losert</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shot-card">
+                        <img src="img3.jpeg"width="300" height="225">
+                        <div class="card-body text-center">
+                            <p class="card-text mb-0">🔗 Wkio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shot-card">
+                        <img src="https://cdn.dribbble.com/userupload/10964296/file/original-ffa83431e0b8639f6d1036a0f80c76ae.png?resize=400x300&vertical=center" class="card-img-top" alt="Shot 2">
+                        <div class="card-body text-center">
+                            <p class="card-text mb-0">🔗 Romain Tystramm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p class="mb-0">Designed and developed by AHAMED SAHUL HAMEED(24900124)</p>
+        </div>
+    </footer>
 
-<footer class="footer text-white" style="background-color: #333; padding: 30px 0; text-align: center;">
-  <div class="container">
-    <p>&copy; 2023 Dribbble Clone. All rights reserved.</p>
-    <p>Created by Raksha Dharanika V</p>
-    <p>
-      <a href="#" style="color: #b5b5b5;">Privacy Policy</a> |
-      <a href="#" style="color: #b5b5b5;">Terms of Service</a>
-    </p>
-  </div>
-</footer>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dribbble Clone</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-light">
-  <div class="container">
-    <a class="navbar-brand text-primary" href="#"><strong>Dribbble Clone</strong></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link text-dark active" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#">Shots</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#">Designers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#">Sign Up</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-<section class="text-center text-white" style="background-image: linear-gradient(to bottom right, #5c67f5, #7091ff); padding: 100px 0;">
-  <div class="container">
-    <h1 style="font-weight: bold; font-size: 2.5rem;">Discover the World’s Top Designers & Creatives</h1>
-    <p style="font-size: 1.1rem;">Join the Dribbble community to showcase your work, inspire others, and find design inspiration.</p>
-    <a href="#" class="btn btn-primary btn-lg mt-3">Get Started</a>
-  </div>
-</section>
-
-
-<section class="featured-section">
-  <div class="container">
-    <h2 class="text-center text-primary mb-5">Featured UI/UX Shots</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card border-light shadow">
-          <img src="C:\Users\A.sathish\Downloads\flat-design-geometric-pattern-mobile-design-template_23-2149939686.avif" class="card-img-top" alt="Shot 1">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Creative App Interface</h5>
-            <p class="card-text text-secondary">A brief description of the app interface design.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card border-light shadow">
-          <img src="C:\Users\A.sathish\Downloads\gradient-ui-ux-elements_23-2149057420.avif" class="card-img-top" alt="Shot 2">
-          <div class="card-body">
-            <h5 class="card-title text-info">Modern Dashboard UI</h5>
-            <p class="card-text text-secondary">A sleek, modern dashboard design for data visualization.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card border-light shadow">
-          <img src="C:\Users\A.sathish\Downloads\online-shopping-landing-page_33099-1725.avif" class="card-img-top" alt="Shot 3">
-          <div class="card-body">
-            <h5 class="card-title text-success">E-commerce Web Design</h5>
-            <p class="card-text text-secondary">An attractive e-commerce landing page for a smooth user experience.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<footer class="footer text-white" style="background-color: #333; padding: 30px 0; text-align: center;">
-  <div class="container">
-    <p>&copy; 2023 Dribbble Clone. All rights reserved.</p>
-    <p>Created by Raksha Dharanika V</p>
-    <p>
-      <a href="#" style="color: #b5b5b5;">Privacy Policy</a> |
-      <a href="#" style="color: #b5b5b5;">Terms of Service</a>
-    </p>
-  </div>
-</footer>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
 ```
 # OUTPUT:
-![386112585-4f644ce2-f13a-47b4-a1dc-10e97e75d75a](https://github.com/user-attachments/assets/bf52116b-bc61-4859-a794-ea2360e0e316)
+![Screenshot 2024-12-25 223318](https://github.com/user-attachments/assets/97218729-6075-4740-8c4c-6efc2bca9a3a)
+
+![Screenshot 2024-12-25 223338](https://github.com/user-attachments/assets/48186ccf-966f-4bae-ad08-e7cebeda32d2)
 
 # RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
